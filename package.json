@@ -1,5 +1,9 @@
 {
+<<<<<<< HEAD
   "name": "tunier-system",
+=======
+  "name": "tournement",
+>>>>>>> 5efe5ca8c5805999dc8e4ca60db86beeb8576eac
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -11,13 +15,24 @@
   "dependencies": {
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
+<<<<<<< HEAD
     "next": "15.3.4"
+=======
+    "next": "15.3.3"
+>>>>>>> 5efe5ca8c5805999dc8e4ca60db86beeb8576eac
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
     "tailwindcss": "^4",
     "eslint": "^9",
+<<<<<<< HEAD
     "eslint-config-next": "15.3.4",
     "@eslint/eslintrc": "^3"
   }
 }
+=======
+    "eslint-config-next": "15.3.3",
+    "@eslint/eslintrc": "^3"
+  }
+}
+>>>>>>> 5efe5ca8c5805999dc8e4ca60db86beeb8576eac

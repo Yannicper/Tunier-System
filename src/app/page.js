@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import Image from "next/image";
 
 export default function Home() {
@@ -101,3 +102,6 @@ export default function Home() {
     </div>
   );
 }
+=======
+
+>>>>>>> 5efe5ca8c5805999dc8e4ca60db86beeb8576eac
