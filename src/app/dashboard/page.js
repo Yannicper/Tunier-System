@@ -31,10 +31,6 @@ const turniere = [
     progress: 100,
   }
 ];
-
-
-
-
   return (
     <><DashboardNavBar />
     <div className={styles.dashboardBox}>
