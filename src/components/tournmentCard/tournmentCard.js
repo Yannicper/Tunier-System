@@ -5,7 +5,7 @@ export default function TournamentCard({ tournament }) {
   const { name, startTime, status, teams, progress } = tournament;
 
   return (
-<Link href={`/tournament/${tournament.id}`} className={styles.link}>
+<Link href={`/tournament/${tournament.id}/Overview`} className={styles.link}>
     <div className={styles.card}>
       <div className={styles.header}>
         <h3>{name}</h3>

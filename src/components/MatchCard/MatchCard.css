@@ -1,0 +1,93 @@
+.MatchCard-container {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 16px auto;
+  font-family: sans-serif;
+  border: 2px solid #000000;
+}
+
+.mainGameInformations {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.teams {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.vs {
+  font-weight: normal;
+  font-size: 1rem;
+  color: #666;
+}
+
+.time {
+  font-size: 0.9rem;
+  color: #444;
+  margin-top: 4px;
+}
+
+.extraInformations {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+.location,
+.referee,
+.score {
+  padding: 4px 0;
+}
+.updateGame {
+  background-color: #00b30f;
+  color: white;
+  font-size: 16px;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.updateGame:hover {
+  background-color: #00b30f;
+  transform: scale(1.03);
+}
+
+.updateGame:active {
+  background-color: #00b30f;
+  transform: scale(0.98);
+}
+
+/* Responsives Verhalten */
+@media (max-width: 480px) {
+  .mainGameInformations {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .teams {
+    font-size: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .time {
+    margin-top: 8px;
+  }
+
+  .MatchCard-container {
+    padding: 12px;
+  }
+}
