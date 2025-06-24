@@ -1,11 +1,13 @@
-
+import Link from 'next/link';
 export default function DashboardNavBar() {
   return (
     <nav style={styles.nav}>
       <div style={styles.left}>
       </div>
       <div style={styles.right}>
-        <button style={styles.button}>Aktion</button>
+        <Link href="/createTournement">
+          <button style={styles.button}>Aktion</button>
+        </Link>
         <div style={styles.userProfile}>
           <div style={styles.userImageWrapper}>
           </div>

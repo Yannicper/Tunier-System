@@ -2,6 +2,7 @@
 
 import React from 'react';
 import MatchCard from "@/components/MatchCard/MatchCard"
+import TournementNavbar from '@/components/TournementNavbar/TournementNavbar';
 
 
 
@@ -60,10 +61,7 @@ export default function TournamentOverview() {
 ];
   return (
     <div>
-      <div className='tournemnt-Navbar'>Information</div>
-      <div className="overviewInformations">
-            <h1>Spicher Open</h1>
-      </div>
+      <TournementNavbar/>
       <div className="upComming-Matches-Container">
           {upcomingMatches.map((match) => (
                 <MatchCard key={match.id} match={match} />
