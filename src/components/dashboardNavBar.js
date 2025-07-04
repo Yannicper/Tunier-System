@@ -1,22 +1,30 @@
-import Link from 'next/link';
+"use client";
+import React, { useState } from "react";
+import Link from "next/link";
+
 export default function DashboardNavBar() {
+
   return (
-    <nav style={styles.nav}>
-      <div style={styles.left}>
-      </div>
-      <div style={styles.right}>
-        <Link href="/createTournement">
-          <button style={styles.button}>Aktion</button>
-        </Link>
-        <div style={styles.userProfile}>
-          <div style={styles.userImageWrapper}>
-          </div>
-          <span style={styles.userName}>Max Mustermann</span>
+    <>
+      <nav style={styles.nav}>
+        <div style={styles.left}>
         </div>
-      </div>
-    </nav>
+        <div style={styles.right}>
+            <button style={styles.button}>
+              <Link href="/createTournament" style={styles.link}>
+            Turnier erstellen
+          </Link>
+            </button>
+          <div style={styles.userProfile}>
+            <div style={styles.userImageWrapper}>
+            </div>
+            <span style={styles.userName}>Max Mustermann</span>
+          </div>
+        </div>
+      </nav>
+    </>
   );
-}
+    }
 
 const styles = {
   nav: {
