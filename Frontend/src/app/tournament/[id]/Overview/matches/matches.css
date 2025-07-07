@@ -1,0 +1,43 @@
+.container-Matches {
+  display: grid;
+  grid-template-columns: 1fr 3fr 2fr; /* Bar | Ongoing | Upcoming */
+  grid-template-rows: 100vh;
+  height: 100vh;
+}
+
+.matches-Bar {
+  grid-column: 1 / 2;
+  background: none;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding: 1rem;
+  border-right: 1px solid #ddd;
+  gap: 0.5rem;
+}
+
+.matches-Bar button {
+  background: none;
+  border: none;
+  font-size: 1rem;
+  padding: 0.5rem 0;
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+}
+
+.matches-Bar button.active {
+  border-bottom: 2px solid black;
+  font-weight: bold;
+}
+
+.ongoing-Container {
+  background-color: #e0f7fa;
+  padding: 1rem;
+  grid-column: 2 / 3;
+}
+
+.upcoming-Container {
+  background-color: #e8f5e9;
+  padding: 1rem;
+  grid-column: 3 / 4;
+}

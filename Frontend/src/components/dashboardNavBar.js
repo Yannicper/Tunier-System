@@ -11,7 +11,7 @@ export default function DashboardNavBar() {
         </div>
         <div style={styles.right}>
             <button style={styles.button}>
-              <Link href="/createTournament" style={styles.link}>
+            <Link href="/createTournament" style={styles.link}>
             Turnier erstellen
           </Link>
             </button>
